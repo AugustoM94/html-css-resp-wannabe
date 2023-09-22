@@ -128,16 +128,17 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
-/* Tablet + Bonus Responsive - from 0px to 1160px */
-@media all and (max-width: 1140px) {
+
+@media screen and (max-width: 1140px) {
     .container {
         width: 100%;
     }
 }
-/* Mobile Responsive - from 0px to 480px */
-@media all and (max-width: 480px) {
+/* Mobile Responsive  */
+@media screen and (max-width: 480px) {
     .row {
         flex-wrap: wrap;
+        padding: 0 1.5rem;
     }
 
     .lessons .col,
@@ -166,7 +167,7 @@ img {
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .lessons .col img,
@@ -186,12 +187,21 @@ img {
     .why-us .container {
         background-color: #222222;
     }
-
+ 
     .why-us h2 {
         padding-top: 3rem;
+        font-size: 2.5rem;
     }
+    .steps .col {
+        padding: 1rem 0;
+    }
+    .why-us .row h3 {
+        font-size: 1.5rem;
+    }
+        
 }
-@media all and (max-width: 768px) {
+/* Tablet Responsive */
+@media screen and (max-width: 768px) {
    
     .lessons .col,
     .steps .col,
@@ -221,14 +231,15 @@ img {
     p {
         font-size: 1rem;
     }
-   .text {
-    padding: 0 10px;
-   }
+  
     .lessons .col img,
     .steps .col img {
         height: 200px;
     }
-
+.steps .col {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
     .container {
         padding: 0 2rem;
     }
@@ -248,7 +259,9 @@ img {
     .col h3 {
         font-size: 1rem;
     }
-    .why-us .col-right {
-        padding-right: 5px;
+  
+}
+@media screen and (min-width:768px max-width:1160px) {
+    .container {
     }
 }
