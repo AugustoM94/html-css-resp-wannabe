@@ -191,3 +191,64 @@ img {
         padding-top: 3rem;
     }
 }
+@media all and (max-width: 768px) {
+   
+    .lessons .col,
+    .steps .col,
+    .why-us .col-left,
+    .why-us .col-right {
+        
+        margin-bottom: 0.5rem;
+    }
+
+    .lessons .col:last-of-type,
+    .steps .col:last-of-type {
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+   .text {
+    padding: 0 10px;
+   }
+    .lessons .col img,
+    .steps .col img {
+        height: 200px;
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+
+    .steps,
+    .why-us {
+        margin-bottom: 0;
+    }
+
+    .why-us .container {
+        background-color: #222222;
+    }
+
+    .why-us h2 {
+        padding-top: 3rem;
+    }
+    .col h3 {
+        font-size: 1rem;
+    }
+    .why-us .col-right {
+        padding-right: 5px;
+    }
+}
